@@ -10,6 +10,10 @@ class Stock:
 		self._bought_at = None
 		self._currency = None
 		self._amount = None
+		self._ticker = None
+		self._quote = None
+		#Profit per stock
+		self._profitPS = None
 
 	def get_name(self):
 		return self._name
@@ -18,7 +22,7 @@ class Stock:
 		self._name = name
 
 	def get_wkn(self):
-		return _wkn
+		return self._wkn
 
 	def set_wkn(self, wkn):
 		self._wkn = wkn
@@ -46,3 +50,21 @@ class Stock:
 
 	def get_amount(self):
 		return self._amount
+
+	def get_ticker(self):
+		return self._ticker
+
+	def set_ticker(self, ticker):
+		self._ticker = ticker
+
+	def get_quote(self):
+		return self._quote
+
+	def set_quote(self, quote):
+		self._quote = quote
+
+	def get_profitPS(self):
+		return self._profitPS
+
+	def set_profitPS(self, profit):
+		self._profitPS = profit
